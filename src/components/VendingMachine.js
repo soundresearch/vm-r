@@ -90,7 +90,7 @@ const VendingMachine = () => {
             </Canvas>
             <Modal isOpen={animationComplete} onClose={handleCloseModal}>
                 <div className="h-[150px] w-[150px] md:h-[270px] md:w-[270px] bg-blue-100 rounded-lg">
-                    <img src={`/vm-c/${selectedButton}.png`} className="object-cover w-full h-full" />
+                    <img src={`/vm-r/${selectedButton}.png`} className="object-cover w-full h-full" />
                 </div>
                 <p className="text-center mt-4 mb-4 text-xl">You just received <span className="text-pink-500 font-bold">{emojiName[selectedButton]}</span>!</p>
             </Modal>

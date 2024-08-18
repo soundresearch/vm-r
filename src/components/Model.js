@@ -4,13 +4,13 @@ import { useGLTF } from '@react-three/drei';
 import * as THREE from 'three';
 
 const sounds = {
-    cancel: new Audio('/vm-c/gen_cancel.wav'),
-    check: new Audio('/vm-c/gen_check.wav'),
-    emoji: new Audio('/vm-c/gen_emoji.wav'),
+    cancel: new Audio('/vm-r/gen_cancel.wav'),
+    check: new Audio('/vm-r/gen_check.wav'),
+    emoji: new Audio('/vm-r/gen_emoji.wav'),
 };
 
 export function Model({ setIsLoading, setMessage, resetPos, setResetPos, setAnimationComplete, selectedButton, setSelectedButton, setCursorStyle, ...props }) {
-  const { nodes, materials } = useGLTF('/vm-c/vending-machine.glb');
+  const { nodes, materials } = useGLTF('/vm-r/vending-machine.glb');
   const [triggerAnimation, setTriggerAnimation] = useState(false);
   const [animationProgress, setAnimationProgress] = useState(0);
   const [disableButtons, setDisableButtons] = useState(false);
